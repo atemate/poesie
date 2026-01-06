@@ -35,6 +35,22 @@
   .markdown-body code,
   .markdown-body pre {
     background-color: var(--code-bg);
+    color: var(--text-color);
+  }
+
+  .markdown-body pre > code {
+    color: var(--text-color);
+  }
+
+  [data-theme="dark"] .markdown-body .highlight pre,
+  [data-theme="dark"] .markdown-body pre {
+    background-color: var(--code-bg);
+    color: var(--text-color);
+  }
+
+  [data-theme="dark"] .markdown-body code {
+    background-color: var(--code-bg);
+    color: var(--text-color);
   }
 
   .border-gray-light {
@@ -45,7 +61,7 @@
   .theme-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
+    left: 20px;
     background: var(--code-bg);
     border: 2px solid var(--border-color);
     border-radius: 50%;
