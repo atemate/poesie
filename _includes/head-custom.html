@@ -58,11 +58,24 @@
     border-color: var(--border-color) !important;
   }
 
+  /* Footer with theme toggle */
+  .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .footer-content p {
+    margin: 0;
+    text-align: right;
+    flex: 1;
+  }
+
   /* Theme toggle button styles */
   .theme-toggle {
-    position: absolute;
-    top: 10px;
-    right: 30px;
+    position: relative;
     background: var(--code-bg);
     border: 2px solid var(--border-color);
     border-radius: 50%;
@@ -74,7 +87,7 @@
     justify-content: center;
     font-size: 24px;
     transition: all 0.3s ease;
-    z-index: 1000;
+    flex-shrink: 0;
   }
 
   .theme-toggle:hover {
